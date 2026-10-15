@@ -1,0 +1,52 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Node.js / React
+**/node_modules/
+frontend/dist/
+frontend/coverage/
+*.local
+
+# Laravel / PHP
+backend/vendor/
+backend/public/build/
+backend/public/hot
+backend/public/storage/
+backend/.phpunit.cache/
+backend/.phpunit.result.cache
+
+# Laravel runtime data
+backend/storage/app/*
+!backend/storage/app/.gitignore
+backend/storage/logs/*
+!backend/storage/logs/.gitignore
+backend/storage/framework/cache/data/*
+backend/storage/framework/sessions/*
+backend/storage/framework/views/*
+
+# Databases, backups, exports
+*.sqlite
+*.sqlite3
+*.sql
+*.sql.gz
+*.bak
+*.zip
+
+# CSV imports and generated exports
+backend/**/*.csv
+frontend/**/*.csv
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local AI development instructions
+backend/AGENTS.md
+backend/CLAUDE.md
